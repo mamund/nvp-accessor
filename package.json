@@ -1,6 +1,6 @@
 {
   "name": "nvp-accessor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple module to access name-value pairs in an object",
   "main": "nvp-accessor.js",
   "directories": {
