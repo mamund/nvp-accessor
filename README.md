@@ -39,7 +39,6 @@ _Author : Mike Amundsen (@mamund)_
 ```
   name = 'fieldName';
   message = {};
-  message = {...};
   nameValuePair = "_nvp";
    
   accessor.find({name:n})
