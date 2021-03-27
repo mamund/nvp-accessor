@@ -16,12 +16,15 @@ console.log(a.find({name:"address"}));
 console.log(a.find({name:"nicknames"}));
 console.log(a.find({name:"hatsize"}));
 
+// find a property of a property
+console.log(a.find({name:'city',message:a.find({name:'address'})}));
+
 // create a new object 
 // w/ a collection of properties
 // found in the preloaded object
 console.log("=== property collections");
 
-var props = ["givenName", "familyName", "middleName", "address", "nicknames", "hatsize"];
+var props = ["givenName", "familyName", "middleName", "nicknames"];
 console.log(a.gather({collection:props}));
 
 /*
