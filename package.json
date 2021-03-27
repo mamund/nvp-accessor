@@ -1,0 +1,24 @@
+{
+  "name": "nvp-accessor",
+  "version": "1.0.0",
+  "description": "Simple module to access name-value pairs in an object",
+  "main": "nvp-accessor.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamund/nvp-accessor.git"
+  },
+  "author": "Mike Amundsen (@mamund)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mamund/nvp-accessor/issues"
+  },
+  "homepage": "https://github.com/mamund/nvp-accessor#readme"
+}

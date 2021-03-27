@@ -1,6 +1,5 @@
 /* 
    nvp accessor example 
-   2021-03-25 : @mamund
 */
 
 
@@ -17,7 +16,7 @@ var person = {
   ]
 };
 
-var a = require("./accessor.js")({message:person});
+var a = require("./../nvp-accessor.js")({message:person});
 // initialize the accessor
 //a.init({message:person});
 
@@ -25,12 +24,12 @@ var a = require("./accessor.js")({message:person});
 // in the preloaded object
 console.log("=== find properties");
 
-console.log(a.f({name:"givenName"}));
-console.log(a.f({name:"middleName"}));
-console.log(a.f({name:"familyName"}));
-console.log(a.f({name:"address"}));
-console.log(a.f({name:"nicknames"}));
-console.log(a.f({name:"hatsize"}));
+console.log(a.find({name:"givenName"}));
+console.log(a.find({name:"middleName"}));
+console.log(a.find({name:"familyName"}));
+console.log(a.find({name:"address"}));
+console.log(a.find({name:"nicknames"}));
+console.log(a.find({name:"hatsize"}));
 
 // create a new object 
 // w/ a collection of properties
@@ -38,7 +37,7 @@ console.log(a.f({name:"hatsize"}));
 console.log("=== property collections");
 
 var props = ["givenName", "familyName", "middleName", "address", "nicknames", "hatsize"];
-console.log(a.c({collection:props}));
+console.log(a.gather({collection:props}));
 
 /*
  * EOF
