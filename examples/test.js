@@ -2,23 +2,8 @@
    nvp accessor example 
 */
 
-
-// person object to access
-var person = {
-  "givenName": "John",
-  "familyName": "Doe",
-  "age": 21,
-  "_nvp" : [
-    {"name" : "hatsize", "value" : null},
-    {"name" : "middleName", "value" : "Seymore"},
-    {"name" : "nicknames", "value" : ["J","JJ","Johnboy","Jack"]},
-    {"name" : "address", "value": {"street":"123 main", "city": "byteville", "state": "MD", "zip": "12345"}}
-  ]
-};
-
+var person = require('./person.js');
 var a = require("./../nvp-accessor.js")({message:person});
-// initialize the accessor
-//a.init({message:person});
 
 // find individual properties
 // in the preloaded object
