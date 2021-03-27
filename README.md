@@ -4,16 +4,18 @@ _Author : Mike Amundsen (@mamund)_
 
 
 ### module constructor
-    message = {};
-    nameValuePair = "_nvp";
+```
+  message = {};
+  nameValuePair = "_nvp";
 
-  * const accessor = require('./nvp-accessor')()
-  * const accessor = require('./nvp-accessor')({message:m})
-  * const accessor = require('./nvp-accessor')({message:m, nameValuePair:p})
+  const accessor = require('./nvp-accessor')()
+  const accessor = require('./nvp-accessor')({message:m})
+  const accessor = require('./nvp-accessor')({message:m, nameValuePair:p})
+```
 
 ### initialize the accessor 
-   message = {}
-   nameValuePair = "_nvp"
+    message = {}
+    nameValuePair = "_nvp"
  
  * accessor.init({message:m,nameValuePair:p})
  
@@ -21,7 +23,7 @@ _Author : Mike Amundsen (@mamund)_
   * accessor.message();
  
 ### gather a set of properties from the message
-   c = ['field1','field2',...] 
+    c = ['field1','field2',...] 
    
  * accessor.gather({collection:c})
  * accessor.gather({collection:c, message:m})
