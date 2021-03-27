@@ -41,6 +41,7 @@
  * accessor.m <== alias for message
  */
 
+// args = {message:{}, nameValuePair:""}
 module.exports = function(args) {
   
   // optionally pass in object message to accces
@@ -50,6 +51,7 @@ module.exports = function(args) {
   local.p = a.nameValuePair || "_nvp"
   
   // initialize instance
+  // args = {message:{}, nameValuePair:""}
   function init(args) {
     var a = args || {};
     local.m = a.message || {};
@@ -62,6 +64,7 @@ module.exports = function(args) {
   }
   
   // return a normalized list of properties
+  // args = {collection:[], message:{}, nameValuePair:""}
   function gather(args) {
     var a = args || {};
     var c = a.collection || [];
@@ -83,6 +86,7 @@ module.exports = function(args) {
   
   // return a single property
   // whether explicit or implicit
+  // args = {message:{}, name:"", nameValuePair:""}
   function find(args) {
     var a = args || {};
     var n = a.name || "";
