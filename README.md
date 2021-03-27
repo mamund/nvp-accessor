@@ -22,6 +22,7 @@ _Author : Mike Amundsen (@mamund)_
   * accessor.message();
  
 ### gather a set of properties from the message
+   
    c = ['field1','field2',...] 
    
  * accessor.gather({collection:c})
@@ -29,6 +30,7 @@ _Author : Mike Amundsen (@mamund)_
  * accessor.gather({collection:c, message,:m nameValuePair:p})
  
 ### find a single property's value
+   
    name = 'fieldName';
    message = {};
    message = {...};
