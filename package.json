@@ -20,5 +20,7 @@
   "bugs": {
     "url": "https://github.com/mamund/nvp-accessor/issues"
   },
-  "homepage": "https://github.com/mamund/nvp-accessor#readme"
+  "homepage": "https://github.com/mamund/nvp-accessor#readme",
+  "dependencies": {
+  }
 }

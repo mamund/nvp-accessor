@@ -2,6 +2,9 @@
    nvp accessor example 
 */
 
+var val = require('jsonschema').Validator;
+var v = new val();
+
 var person = require('./person.js');
 var a = require("./../nvp-accessor.js")({message:person});
 
